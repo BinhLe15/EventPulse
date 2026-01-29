@@ -1,10 +1,10 @@
 import asyncio
 from unittest.mock import MagicMock
-from src.infrastructure.repositories.user import UserRepository
-from src.infrastructure.repositories.monitored_account import MonitoredAccountRepository
-from src.services.notifier.service import NotifierService
-from src.services.tracker.service import TrackerService
-from src.infrastructure.repositories.processed_video import ProcessedVideoRepository
+from src.repositories.user import UserRepository
+from src.repositories.account import MonitoredAccountRepository
+from src.services.notifier_service import NotifierService
+from src.services.tracker_service import TrackerService
+from src.repositories.video import ProcessedVideoRepository
 
 async def verify_instantiation():
     mock_session = MagicMock()

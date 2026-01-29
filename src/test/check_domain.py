@@ -1,5 +1,5 @@
-from src.domain.models import TikTokVideo
-from src.domain.events import VideoFoundEvent
+from src.schemas.video import TikTokVideo
+from src.schemas.events import VideoFoundEvent
 from datetime import datetime
 
 # Test Data

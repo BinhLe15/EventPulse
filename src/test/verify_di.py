@@ -1,10 +1,10 @@
 import asyncio
 from unittest.mock import MagicMock
-from src.domain_services.api.dependencies import get_tracker_service, get_notifier_service
-from src.infrastructure.repositories.user import UserRepository
-from src.infrastructure.repositories.monitored_account import MonitoredAccountRepository
-from src.infrastructure.repositories.processed_video import ProcessedVideoRepository
-from src.infrastructure.kafka.producer import EventProducer
+from src.api.dependencies import get_tracker_service, get_notifier_service
+from src.repositories.user import UserRepository
+from src.repositories.account import MonitoredAccountRepository
+from src.repositories.video import ProcessedVideoRepository
+from src.core.kafka import EventProducer
 
 async def verify_di_logic():
     print("Verifying DI factory functions manually...")
